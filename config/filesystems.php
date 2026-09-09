@@ -46,9 +46,6 @@ return [
         | Railway:
         | /app/public/storage
         |
-        | Railway Volume đang mount trực tiếp tại:
-        | /app/public/storage
-        |
         */
 
         'public' => [
@@ -71,12 +68,6 @@ return [
 
             'report' => false,
         ],
-
-        /*
-        |--------------------------------------------------------------------------
-        | S3
-        |--------------------------------------------------------------------------
-        */
 
         's3' => [
             'driver' => 's3',
@@ -121,14 +112,6 @@ return [
     |--------------------------------------------------------------------------
     | Symbolic Links
     |--------------------------------------------------------------------------
-    |
-    | Local có thể dùng:
-    |
-    | php artisan storage:link
-    |
-    | Trên Railway hiện tại /app/public/storage là Volume thật,
-    | vì vậy không cần tạo symlink tại đó.
-    |
     */
 
     'links' => [
